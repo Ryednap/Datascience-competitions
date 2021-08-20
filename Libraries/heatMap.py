@@ -3,7 +3,7 @@
 		pandas is imported as pd
 '''
 
-def heatMap (data : pd.DataFrame): -> None
+def heatMap (data : pd.DataFrame) -> None:
 	corrmat = data.corr()
 	top_corr_features = corrmat.index
 	plt.figure (figsize (20, 20))
